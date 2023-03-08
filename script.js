@@ -1,37 +1,33 @@
 
-for (let i = 0; i <= 10; i += 2) {
-    console.log(i);
-  } 
+let number = prompt("Введи число");
+let result = number * 0.1; 
+console.log(result); 
 
 
-  for (let i = 55; i >= 20; i--) {
-    console.log(i);
-  } 
+let num1 = prompt("Введи первое число"); 
+let num2 = prompt("Введите второе число"); 
+if (num1 < num2) {
+  console.log("мен.число" + num1);
+} else {
+  console.log("мен.число" + num2);
+}
 
 
-  const numbers = [3, 5, 11, 2, 8, 1, 6];
-
-  for (let i = 0; i < numbers.length; i++) {
-    console.log(numbers[i]);
-  } 
-
-
-  const numbers = [3, 5, 11, 2, 8, 1, 6];
-  const numbers_squared = [];
-  
-  for (let i = 0; i < numbers.length; i++) {
-    numbers_squared.push(numbers[i] ** 2);
-  }
-    console.log(numbers_squared);
+let number = prompt("Введи число"); 
+if (number < 100) {
+  console.log("меньше 100");
+} else if (number > 100) {
+  console.log("больше 100");
+} else {
+  console.log("равно 100");
+}
 
 
-    const user = {
-        first_name: 'Ivan', 
-        last_name: 'Ivanov', 
-        age: 20, 
-        salary: 500
-      }
-      const user_info = `User's name is ${user.first_name} ${user.last_name}. 
-      He is ${user.age} years old.`;
-
-      console.log(user_info);
+const name = prompt("Введи имя");
+const age = parseInt(prompt("Введи возраст"));
+if (age >= 18) {
+  console.log(`Hello, ${name}!`); 
+} 
+else {
+  console.log(`Hi, ${name}!`); 
+} 
